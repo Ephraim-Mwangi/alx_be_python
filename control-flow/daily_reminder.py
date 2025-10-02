@@ -1,7 +1,7 @@
 Task = input ("Enter your task:")
+Time_Bound = input ("is it time-bound? (yes/no)")
 Priority = input ("Priority (high/medium/low):")
-Time_Bound = input ("Is it time-bound? (yes/no)")
-match priority:
+match Priority:
     case "high":
         print ( f"Note: {Task}is a high priority task that reqires immediate attention today.")
     case "medium":
