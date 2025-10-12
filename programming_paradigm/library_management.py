@@ -3,7 +3,7 @@ from typing import Optional, List
 
 class Book:
     """Represents a book with title, author and checkout state."""
-
+def __init__(self):
     def __init__(self, title: str, author: str) -> None:
         self.title: str = title
         self.author: str = author
