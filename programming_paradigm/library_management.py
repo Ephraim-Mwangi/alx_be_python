@@ -37,7 +37,7 @@ class Library:
 
     def add_book(self, book: Book) -> None:
         """Add a Book instance to the library."""
-        self._books =[]
+        self._books = [].append(book)
 
     def _find_book_by_title(self, title: str) -> Optional[Book]:
         """Return the first Book matching title or None if not found."""
