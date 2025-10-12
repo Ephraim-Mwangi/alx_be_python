@@ -3,7 +3,7 @@ from simple_calculator import SimpleCalculator
 
 class TestSimpleCalculator(unittest.TestCase):
     def setUp(self):
-        self.calculator = SimpleCalculator()
+        self.calculator = 
 
     def test_addition(self):
         self.assertEqual(self.calc.add(5, 3), 8)
