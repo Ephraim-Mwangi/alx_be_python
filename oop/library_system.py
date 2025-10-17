@@ -13,6 +13,9 @@ class PrintBook(Book):
         super().__init__(title, author)
         self.num_pages = num_pages
 
+    def __str__(self):
+        return f"{self.title} by {self.author}, {self.num_pages} pages"
+
 class Library:
     def __init__(self):
         self.books = []  # List to store instances of Book, EBook, and PrintBook
