@@ -11,10 +11,10 @@ class EBook(Book):
 class PrintBook(Book):
     def __init__(self, title, author, page_count):
         super().__init__(title, author)
-        self.page_count = page_count
+        self.num_pages = page_count
 
     def __str__(self):
-        return f"{self.title} by {self.author}, {self.num_pages} pages"
+        return f"{self.title} by {self.author}, {self.page_count} pages"
 
 class Library:
     def __init__(self):
@@ -37,6 +37,7 @@ class Library:
             # Print common attributes
             print(f"\nTitle: {book.title}")
             print(f"Author: {book.author}")
+            print(f"Number of Pages: {book.num_pages}")
             
             # Print specific attributes based on book type
             if isinstance(book, EBook):
