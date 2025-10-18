@@ -71,11 +71,12 @@ class Library:
             
             # Print specific attributes based on book type
             if isinstance(book, EBook):
-                print(f"Type: E-Book")
+                print(f"Book: {book}")
+                print(f"EBook: {book}")
                 print(f"File Size: {book.file_size}")
             elif isinstance(book, PrintBook):
-                print(f"Type: Print Book")
-                print(f"Number of Pages: {book.num_pages}")
+                print(f"PrintBook: {book}")
+                print(f"page Count: {book.num_pages}")
             else:
                 print("Type: Book")
 
