@@ -29,4 +29,6 @@ class Circle(Shape):
         return math.pi * (self.radius ** 2)
 
 
-def print_area(shape: shape)
+def print_area(shape: Shape):
+    """Print the area for a Shape instance."""
+    print(f"Area: {shape.area()}")
